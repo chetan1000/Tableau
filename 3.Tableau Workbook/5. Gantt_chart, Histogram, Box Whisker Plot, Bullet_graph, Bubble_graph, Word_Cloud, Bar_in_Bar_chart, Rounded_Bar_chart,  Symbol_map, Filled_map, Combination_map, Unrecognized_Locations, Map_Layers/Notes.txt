@@ -1,0 +1,133 @@
+Gantt chart -list of events against a timeline
+connect to build a house dataset
+1) bring category on my row shelf
+2) bring my start date on column shelf
+3)then right click on date and arrange it as per exact value
+4) i have to put my duration on my size shelf
+5) then i can color my chart based on category
+6) i have to goto my category and arrange the order based on field (start date ) and select minimum value
+Tableau will give us a gannt chart 
+
+Histogram
+use coffee chain data
+Objective: to perform distributive analysis
+1 measure is enough( sales is enough or profit is enough)
+Drag sales onto row shelf.Tableau will create by default sales bin with specificsize( 34.3)
+if we want to manually change the bin size then , go to sales measure and click on create bin(with size 60)
+drag this newly created bin onto my canvas ,Then if we want to convert the resultant figure into histogram , increase bar size or change sales bin to discrete data type
+bins can be created only on measures
+
+Box and whisker plot- distribution analysis on data
+use sample superstore
+divide data into 4 quartiles
+Business Problem: discount being offered across different regions and segments
+5 point chart(min value , max value, median, q1 and q3)
+q1 is known as lower hinge(lower quartile)
+q3 is known as upper hinge(upper quartile)
+from minimum to upper hinge 75 percentile of data is concentrated
+from minimum to lower hinge 25 percentile of data is concentrated
+box will contain 50% of data distribution- it is nothing but peak in the data( middle 50% of data )
+any outliers will be outside of box and whiskers
+lenght of whiskers -data within 1.5times the interquartile range
+interquartile range(iqr) =q3-q1
+length of upper whisker= q3+1.5*iqr (>=this value will be an outlier)
+length of lower lower whisker= q1-1.5*iqr
+
+
+Bullet graph- strictly 2 measures (select profit vs budgeted profit)
+1)connect to your coffee chain database
+2)Drag profit and budget profit onto canvas and select bullett graph
+3)Blue bar is my budget profit (258,760), actual profit will be my reference line (259,543)
+4) Overall result is - Actual profit > budget profit(this is good result), If i dig deeper and do a market analysis , i can say that my southern region the worst performing region and my east region was very good.
+5)60% of target , 80% of target can also be seen in my bullett graph for reference
+
+
+Bubble chart- control size and color
+negative profit cannot be represented with negative area
+there use profit on color shelf, and sales on size as sales cannot be negative
+number of bubbles will be determined by sub categorie elements
+1) Drag profit onto row shelf
+2) Drag subcategory onto column shelf
+3) Goto show me panle and select packed bubbles
+4)Drag your profit onto your color shelf 
+5)Drag your sales onto your size shelf
+
+
+Word Cloud
+Select State and Sales as dimension and measure 
+Goto show me panel and select tree map
+select text in place of automatic from marks shelf
+word cloud is ready
+
+Bar in bar chart
+put subcategory in columns and sales in row shelf
+drag profit and put it on canvas secondary y axis
+go to all and then select bar graph from marks shelf
+then reduce the size of profit pill and sort it based on profit or sales
+
+Rounded Bar chart
+Put subcategory on rows sales on columns
+create 0 field in column shelf
+put that 0 field on x axis, then select line chart from marks field
+put measure names on path
+then edit axis and set fixed at 0 
+goto label and select show mark labels and deselct end of line 
+
+
+Maps
+Geographic field -will be identified with the help of a globe icon
+Geographic field could be country , state, city etc 
+
+if we want plot our geographic data, simply drag country , state city on my canvas
+
+Geographic Roles
+1)it is associated region , city , state etc, zip codes(for india postal codes were added in version 10, Airports came up in version 10 of tableau). 
+2)They are all recognized on the basis of latitudes and longitudes. they are stored in tableau repository in documents, we can create new geographic roles and also from existing ones , and also we can create new ones
+3)we can also convert a geographica role into non-geographic role , we can simply plot airports on a map if your dataset has airports
+4)also it recognizes area codes in USA (CBSA.MSA) -core based satistical area/ metropolitran statistical area
+ similary we have county , congressional district levels in USA
+
+*be careful of cities (memphis in egypt or memphis in Tenesse in USA), therefore provide parent information like which country, which state and then followed by which city , otherwise it will provide error called ambiguity
+
+Drag country onto shelf for tableau to understand which country you are talking about(when you drag the country , automatically latitude and ,longitude are placed respectively in column and row shelf)
+
+Symbol maps
+Tableau by default will create symbol maps
+Tableau using a dot wich is a filled in circle is called your symbol map
+we can contol both size and color that is 2 measures ( i can control size with help of sales and color with help of profits)
+Ex:You can make use of a pie chart if you want to know at catgeory level(furtniture, office supplies , technology)
+if you want to know also about profit , you can do it (combined maps)
+
+Combined maps
+1)drag country and state on the shelf
+2)increase the circle size 
+3)drag sales onto size shelf in marks card
+4)drag category onto color shelf in marks card, change the chart type to pie
+5)then if we want to creat a combine map to include profits , then drag latitude and put it on row shelf
+6)convert your graph on top by removing sales and adding profits to color shelf , after that replace the type of chart with filled map
+7)once you have the filled map , combine both the maps with the help of dual axis 
+
+Filled Maps
+1)simply go to show me panel and select filled maps or i can do the same thing from marks card
+2)Maximum we can show only 1 measure on filled map( that is because we can control only paramter which is color )
+3)Tableau doesnot give a filled map for city geographic level
+
+Editing unrecognized locations
+connect to global superstore
+If there is ambiguity , try to enter latitude and longitude
+Take care of spelling mistakes( Bengaluru, if you bangalore)
+
+Layers
+1)By default it will show country border ,state borders, lakes etc.
+2)If you wnat more layers , go to map options and select layers, then you are free to choose from the available layers
+3)Depending on the zoom level of map some layers will be active and inactive
+click on zoom level , max 16 levels of zoom you have 
+4)we can also add data layers, specific to  usa( population , per capita income)
+ex: population layer
+5)At any point in time ,we can show one data layer
+
+
+
+
+
+
