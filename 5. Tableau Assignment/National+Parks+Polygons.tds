@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0515.2100                               -->
+<datasource formatted-name='excel-direct.41942.552163321758' inline='true' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <connection class='federated' prefer-ind-semantics='true'>
+    <named-connections>
+      <named-connection caption='National Parks Polygons' name='excel-direct.41942.552163321758leaf'>
+        <connection class='excel-direct' cleaning='no' compat='no' filename='H:/Documents (H)/Training/9.0 Videos/9dot0 WIP/5 - Mapping &amp; Images/Custom Geocoding/National Parks Polygons.xlsx' validate='no' />
+      </named-connection>
+    </named-connections>
+    <relation connection='excel-direct.41942.552163321758leaf' name='&apos;National Parks Polygons$&apos;' table='[&apos;National Parks Polygons$&apos;]' type='table'>
+      <columns header='yes'>
+        <column datatype='string' name='Park ID' ordinal='0' />
+        <column datatype='string' name='Park Name' ordinal='1' />
+        <column datatype='string' name='Welsh Park Name' ordinal='2' />
+        <column datatype='real' name='Latitude' ordinal='3' />
+        <column datatype='real' name='Longitude' ordinal='4' />
+        <column datatype='integer' name='PointID' ordinal='5' />
+        <column datatype='integer' name='PolygonID' ordinal='6' />
+        <column datatype='integer' name='SubPolygonID' ordinal='7' />
+      </columns>
+    </relation>
+    <refresh increment-key='' incremental-updates='false' />
+    <metadata-records>
+      <metadata-record class='column'>
+        <remote-name>Park ID</remote-name>
+        <remote-type>130</remote-type>
+        <local-name>[Park ID]</local-name>
+        <parent-name>[&apos;National Parks Polygons$&apos;]</parent-name>
+        <remote-alias>Park ID</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <collation flag='1' name='LEN_RUS_S2' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Park Name</remote-name>
+        <remote-type>130</remote-type>
+        <local-name>[Park Name]</local-name>
+        <parent-name>[&apos;National Parks Polygons$&apos;]</parent-name>
+        <remote-alias>Park Name</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <collation flag='1' name='LEN_RUS_S2' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Welsh Park Name</remote-name>
+        <remote-type>130</remote-type>
+        <local-name>[Welsh Park Name]</local-name>
+        <parent-name>[&apos;National Parks Polygons$&apos;]</parent-name>
+        <remote-alias>Welsh Park Name</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <collation flag='1' name='LEN_RUS_S2' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Latitude</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[Latitude]</local-name>
+        <parent-name>[&apos;National Parks Polygons$&apos;]</parent-name>
+        <remote-alias>Latitude</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>15</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Longitude</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[Longitude]</local-name>
+        <parent-name>[&apos;National Parks Polygons$&apos;]</parent-name>
+        <remote-alias>Longitude</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>15</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>PointID</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[PointID]</local-name>
+        <parent-name>[&apos;National Parks Polygons$&apos;]</parent-name>
+        <remote-alias>PointID</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>PolygonID</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[PolygonID]</local-name>
+        <parent-name>[&apos;National Parks Polygons$&apos;]</parent-name>
+        <remote-alias>PolygonID</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>SubPolygonID</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[SubPolygonID]</local-name>
+        <parent-name>[&apos;National Parks Polygons$&apos;]</parent-name>
+        <remote-alias>SubPolygonID</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='capability'>
+        <remote-name />
+        <remote-type>0</remote-type>
+        <parent-name>[&apos;National Parks Polygons$&apos;]</parent-name>
+        <remote-alias />
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='context'>1</attribute>
+          <attribute datatype='boolean' name='header'>true</attribute>
+        </attributes>
+      </metadata-record>
+    </metadata-records>
+  </connection>
+  <aliases enabled='yes' />
+  <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+  <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+  <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+    <calculation class='tableau' formula='1' />
+  </column>
+  <column datatype='string' name='[Park Name]' role='dimension' type='nominal' />
+  <column aggregation='Sum' caption='Point ID' datatype='integer' name='[PointID]' role='dimension' type='ordinal' />
+  <column aggregation='Sum' caption='Polygon ID' datatype='integer' name='[PolygonID]' role='dimension' type='ordinal' />
+  <column aggregation='Sum' caption='Sub Polygon ID' datatype='integer' name='[SubPolygonID]' role='dimension' type='ordinal' />
+  <column-instance column='[Park Name]' derivation='None' name='[none:Park Name:nk]' pivot='key' type='nominal' />
+  <extract count='-1' enabled='true' units='records'>
+    <connection class='dataengine' dbname='C:/Users/Tara/Documents/My Tableau Repository/Datasources/10.3/National Parks Polygons.tds Files/Data/Polygon Maps.twb Files/excel-direct.41942.552163321758.tde' schema='Extract' tablename='Extract' update-time='10/30/2014 08:16:06 PM'>
+      <relation name='Extract' table='[Extract].[Extract]' type='table' />
+      <calculations>
+        <calculation column='[Number of Records]' formula='1' />
+      </calculations>
+      <refresh increment-key='' incremental-updates='false'>
+        <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='5496' timestamp-start='2014-10-30 20:16:06.876' />
+      </refresh>
+      <metadata-records>
+        <metadata-record class='column'>
+          <remote-name>Latitude</remote-name>
+          <remote-type>5</remote-type>
+          <local-name>[Latitude]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Latitude</remote-alias>
+          <ordinal>0</ordinal>
+          <family>&apos;National Parks Polygons$&apos;</family>
+          <local-type>real</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>5411</approx-count>
+          <contains-null>false</contains-null>
+          <statistics>
+            <statistic aggregation='Min' datatype='real'>50.391939999999998</statistic>
+            <statistic aggregation='Max' datatype='real'>57.410735000000003</statistic>
+          </statistics>
+          <attributes>
+            <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>6</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+            <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+          </attributes>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Longitude</remote-name>
+          <remote-type>5</remote-type>
+          <local-name>[Longitude]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Longitude</remote-alias>
+          <ordinal>1</ordinal>
+          <family>&apos;National Parks Polygons$&apos;</family>
+          <local-type>real</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>5411</approx-count>
+          <contains-null>false</contains-null>
+          <statistics>
+            <statistic aggregation='Min' datatype='real'>-5.3529280000000004</statistic>
+            <statistic aggregation='Max' datatype='real'>1.7282189999999999</statistic>
+          </statistics>
+          <attributes>
+            <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+            <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+          </attributes>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Number of Records</remote-name>
+          <remote-type>16</remote-type>
+          <local-name>[Number of Records]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Number of Records</remote-alias>
+          <ordinal>2</ordinal>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>false</contains-null>
+          <statistics>
+            <statistic aggregation='Min' datatype='integer'>1</statistic>
+            <statistic aggregation='Max' datatype='integer'>1</statistic>
+          </statistics>
+          <attributes>
+            <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+            <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+          </attributes>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Park ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Park ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Park ID</remote-alias>
+          <ordinal>3</ordinal>
+          <family>&apos;National Parks Polygons$&apos;</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>15</approx-count>
+          <scale>1</scale>
+          <width>1073741823</width>
+          <contains-null>false</contains-null>
+          <collation flag='1' name='LEN_RUS_S2' />
+          <statistics>
+            <statistic aggregation='Min' datatype='string'>&quot;E26000001&quot;</statistic>
+            <statistic aggregation='Max' datatype='string'>&quot;W18000003&quot;</statistic>
+          </statistics>
+          <attributes>
+            <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+            <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+            <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+            <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+          </attributes>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Park Name</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Park Name]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Park Name</remote-alias>
+          <ordinal>4</ordinal>
+          <family>&apos;National Parks Polygons$&apos;</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>15</approx-count>
+          <scale>1</scale>
+          <width>1073741823</width>
+          <contains-null>false</contains-null>
+          <collation flag='1' name='LEN_RUS_S2' />
+          <statistics>
+            <statistic aggregation='Min' datatype='string'>&quot;Brecon Beacons National Park&quot;</statistic>
+            <statistic aggregation='Max' datatype='string'>&quot;Yorkshire Dales National Park&quot;</statistic>
+          </statistics>
+          <attributes>
+            <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+            <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+            <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+            <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+          </attributes>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>PointID</remote-name>
+          <remote-type>2</remote-type>
+          <local-name>[PointID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>PointID</remote-alias>
+          <ordinal>5</ordinal>
+          <family>&apos;National Parks Polygons$&apos;</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>712</approx-count>
+          <contains-null>false</contains-null>
+          <statistics>
+            <statistic aggregation='Min' datatype='integer'>1</statistic>
+            <statistic aggregation='Max' datatype='integer'>712</statistic>
+          </statistics>
+          <attributes>
+            <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+            <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+          </attributes>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>PolygonID</remote-name>
+          <remote-type>16</remote-type>
+          <local-name>[PolygonID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>PolygonID</remote-alias>
+          <ordinal>6</ordinal>
+          <family>&apos;National Parks Polygons$&apos;</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>15</approx-count>
+          <contains-null>false</contains-null>
+          <statistics>
+            <statistic aggregation='Min' datatype='integer'>1</statistic>
+            <statistic aggregation='Max' datatype='integer'>15</statistic>
+          </statistics>
+          <attributes>
+            <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+            <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+          </attributes>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>SubPolygonID</remote-name>
+          <remote-type>16</remote-type>
+          <local-name>[SubPolygonID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>SubPolygonID</remote-alias>
+          <ordinal>7</ordinal>
+          <family>&apos;National Parks Polygons$&apos;</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>19</approx-count>
+          <contains-null>false</contains-null>
+          <statistics>
+            <statistic aggregation='Min' datatype='integer'>1</statistic>
+            <statistic aggregation='Max' datatype='integer'>19</statistic>
+          </statistics>
+          <attributes>
+            <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+            <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+          </attributes>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Welsh Park Name</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Welsh Park Name]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Welsh Park Name</remote-alias>
+          <ordinal>8</ordinal>
+          <family>&apos;National Parks Polygons$&apos;</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>4</approx-count>
+          <scale>1</scale>
+          <width>1073741823</width>
+          <contains-null>true</contains-null>
+          <collation flag='1' name='LEN_RUS_S2' />
+          <statistics>
+            <statistic aggregation='Min' datatype='string'>&quot;Parc Cenedlaethol Afordir Penfro&quot;</statistic>
+            <statistic aggregation='Max' datatype='string'>&quot;Parc Cenedlaethol Eryri&quot;</statistic>
+          </statistics>
+          <attributes>
+            <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+            <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+            <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+            <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+            <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+            <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+          </attributes>
+        </metadata-record>
+      </metadata-records>
+    </connection>
+  </extract>
+  <layout dim-ordering='alphabetic' dim-percentage='0.487871' measure-ordering='alphabetic' measure-percentage='0.312668' parameter-percentage='0.199461' show-structure='true' />
+  <style>
+    <style-rule element='mark'>
+      <encoding attr='color' field='[none:Park Name:nk]' palette='tableau-20' type='palette'>
+        <map to='#32a251'>
+          <bucket>&quot;Brecon Beacons National Park&quot;</bucket>
+        </map>
+        <map to='#32a251'>
+          <bucket>&quot;The Cairngorms National Park&quot;</bucket>
+        </map>
+        <map to='#39737c'>
+          <bucket>&quot;Pembrokeshire Coast National Park&quot;</bucket>
+        </map>
+        <map to='#3cb7cc'>
+          <bucket>&quot;New Forest National Park&quot;</bucket>
+        </map>
+        <map to='#82853b'>
+          <bucket>&quot;South Downs National Park&quot;</bucket>
+        </map>
+        <map to='#86b4a9'>
+          <bucket>&quot;Snowdonia National Park&quot;</bucket>
+        </map>
+        <map to='#98d9e4'>
+          <bucket>&quot;North York Moors National Park&quot;</bucket>
+        </map>
+        <map to='#acd98d'>
+          <bucket>&quot;Dartmoor National Park&quot;</bucket>
+        </map>
+        <map to='#acd98d'>
+          <bucket>&quot;The Loch Lomond and the Trossachs National Park&quot;</bucket>
+        </map>
+        <map to='#b85a0d'>
+          <bucket>&quot;Northumberland National Park&quot;</bucket>
+        </map>
+        <map to='#ccc94d'>
+          <bucket>&quot;The Broads Authority&quot;</bucket>
+        </map>
+        <map to='#ff7f0f'>
+          <bucket>&quot;Exmoor National Park&quot;</bucket>
+        </map>
+        <map to='#ff7f0f'>
+          <bucket>&quot;Yorkshire Dales National Park&quot;</bucket>
+        </map>
+        <map to='#ffb977'>
+          <bucket>&quot;Lake District National Park&quot;</bucket>
+        </map>
+        <map to='#ffd94a'>
+          <bucket>&quot;Peak District National Park&quot;</bucket>
+        </map>
+      </encoding>
+    </style-rule>
+  </style>
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+  </semantic-values>
+</datasource>
