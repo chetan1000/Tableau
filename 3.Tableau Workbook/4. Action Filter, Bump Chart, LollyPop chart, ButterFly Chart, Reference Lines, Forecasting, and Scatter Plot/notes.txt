@@ -1,0 +1,51 @@
+Bump chart
+It is a line chart where the rank changes based on time line
+connect to global superstore
+rank of markets will change with time (for example sales across these markets with time)
+steps
+put order date onto column shelf
+sales onto row field
+Market into colors shelf
+right click on sales and select quick table calculation and rank and then select compute using market
+then change sales type to dicrete and change chart type in marks card to line
+
+Butterfly chart
+connect to coffe chain dataset
+put state on rows
+put profit and budget profit onto columns
+click on axis of profit and selct reverse
+create calculated field with name zeroaxisand enter value 0
+drop this zeroaxis between profit and budget profit
+click on zeroaxis pil and bring state onto text field
+change the chart type to text
+lets hide state headers, and drag your profit on color shelf and budget profit onto color shelf
+
+
+Reference lines
+1) simply go to axis and click on add reference line, this will help us draw a line
+Reference lines, bands, distribution can be used based on the business logic, they are usely used for benchmarking
+
+Forecasting-Predicting futre trends, estimating future trends given the past (Historic) Data
+Time series
+use historic data -2015, 2016, 2017, 2018
+connect to sample store for this exercise
+Ex: Business was established 4 years ago , what will be my profit in 2019 of superstore , given historic data
+You can predict sales, profit, 
+1) create time series chart or line chart (x axis shoudld be time)
+by default it is exponential smoothing- more importance is given to 2018 and least weightage is given to 2015
+EX : profit(2019)= 0.8*profit(2018)+ 0.6*profit(2017)+...(tableau will take care of the weights)
+You can ignore the last month or inlcude it based on business logic
+confidence interval (we cannot be 100% perfect) so we go for 95% confidence level( there is 95% chance)
+
+Scatter plot - Correlation analysis
+1)It will comment on the direction of relationship
+2)strength of the relationship
+Linear trend line- equation of straight line(y=mx+c), y here is profit(it should always be on y axis)
+x here is sales (it should always be on x axis )y= f(x), profit= f(sales), Rsquare 0.22, it is not a great model, i converted my model from linear to power , R square improved to 0.78
+c is y intercept
+p value <0.05 is allowed, confidence level is 95%
+
+what will be output when given input is provided
+Ex: what will be theweight gained given calories consumed
+Ex: what will be the profit given sales is 100k
+wind speed vs power output
